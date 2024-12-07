@@ -10,14 +10,14 @@ export async function GET(request: Request) {
     }
 
     try {
-        // Get access token
+        // Get access tokennn
         const tokenResponse = await axios.post(
         'https://oauth2.googleapis.com/token',
         null,
         {
             params: {
             code,
-            client_id: process.env.GOOGLE_Client_ID,
+            client_id: process.env.GOOGLE_CLIENT_ID,
             client_secret: process.env.GOOGLE_CLIENT_SECRET,
             redirect_uri: process.env.GOOGLE_REDIRECT_URI,
             grant_type: 'authorization_code',
