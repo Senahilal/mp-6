@@ -21,9 +21,6 @@ const StyledP = styled.p`
 
 
 export default function Home() {
-  const handleSignIn = () => {
-    window.location.href = "/api/sign-in";
-  };
 
   return (
     <StyledDiv>
